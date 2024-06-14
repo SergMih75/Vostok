@@ -1,0 +1,31 @@
+// Сброс стилей
+
+body,
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fontRegular;
+    font-weight: 400;
+    color: $textColorFirst;
+
+    text-decoration: none;
+
+    background-color: $bgFirst;
+}
+
+h1 {
+    font-family: $fontBold;
+    font-weight: 700;
+}
+
+
+// Отключение ховера на мобильных
+@media (hover:hover) {
+    .menu > a:hover {
+        text-shadow: -3px 3px 8px $textColorFirst;
+        color: $textColorFirstHover;
+    }
+}

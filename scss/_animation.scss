@@ -1,0 +1,28 @@
+@keyframes titleMove {
+    80% {
+        transform: translateX(0) translateY(0);
+        -webkit-transform: translateX(0) translateY(0);
+        -moz-transform: translateX(0) translateY(0);
+        -ms-transform: translateX(0) translateY(0);
+        -o-transform: translateX(0) translateY(0);
+
+        opacity: .9;
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+        -webkit-transform: translateX(0) translateY(0);
+        -moz-transform: translateX(0) translateY(0);
+        -ms-transform: translateX(0) translateY(0);
+        -o-transform: translateX(0) translateY(0);
+
+        opacity: 1;
+        text-shadow: -4px 4px 8px $textColorFirst;
+}
+}
+
+@keyframes copyrightMove {
+    100% {
+        opacity: 1;
+    }
+}
