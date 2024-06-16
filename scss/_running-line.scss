@@ -1,0 +1,20 @@
+.running-line {
+    margin: 0 -5px;
+    padding: 300px 0;
+
+    display: none;
+
+    background-color: $bgColorThree;
+
+    &__text {
+        width: 4600px;
+        font-size: clamp(45px, 7.2vw, 72px);
+        line-height: 105%;
+        color: $textColorThree;
+        background-color: $bgColorThree;
+        animation: runningLineMove  18000ms linear 250ms  infinite   ;
+        -webkit-animation: runningLineMove  18000ms linear 250ms  infinite   ;
+        //animation: runningLineMove duration 5000ms timing-function linear delay iteration-count infinite  direction alternate;
+        //-webkit-animation: runningLineMove duration 5000ms timing-function linear delay iteration-count infinite  direction alternate;
+}
+}

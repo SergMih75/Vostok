@@ -1,0 +1,28 @@
+.nav {
+    // width: 89%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+font-size: 20px;
+line-height: 150%;
+letter-spacing: 0.03em;
+}
+
+.menu {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.menu > a {
+font-size: 12px;
+line-height: 173%;
+letter-spacing: 0.05em;
+}

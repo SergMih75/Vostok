@@ -1,0 +1,42 @@
+.client {
+    display: none;
+
+    margin-top: 260px;
+    padding-bottom: 100px;
+
+    text-align: center;
+
+    border-bottom: 1px solid#dddddd;
+
+    &__title {
+        font-size: clamp(25px, 3.8vw, 54px);
+        line-height: 114%;
+
+        margin-bottom: 50px;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        &-item {
+            width: 196px;
+            scale: 0;
+            opacity: 0;
+
+            transition: 800ms linear;
+            -webkit-transition: 800ms linear;
+            -moz-transition: 800ms linear;
+            -ms-transition: 800ms linear;
+            -o-transition: 800ms linear;
+        }
+    }
+}
+
+@media (max-width:650px) {
+    .client {
+        margin-top: 100px;
+    }
+}

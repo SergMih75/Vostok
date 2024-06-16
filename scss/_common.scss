@@ -21,11 +21,25 @@ h1 {
     font-weight: 700;
 }
 
+.main {
+    max-width: 1440px;
+    width: calc(100vw - 17px);
+    margin: 0 auto;
+    padding: 40px 5px 0 5px;
+    overflow: hidden;
+
+    background-color: $bgFirst;
+}
+
 
 // Отключение ховера на мобильных
 @media (hover:hover) {
     .menu > a:hover {
         text-shadow: -3px 3px 8px $textColorFirst;
         color: $textColorFirstHover;
+    }
+
+    .client__logo-item:hover {
+        opacity: 1;
     }
 }

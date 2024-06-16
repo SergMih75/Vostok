@@ -26,3 +26,40 @@
         opacity: 1;
     }
 }
+
+.animation__opacity {
+    opacity: 0;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transition:  800ms linear;
+    -webkit-transition:  800ms linear;
+    -moz-transition:  800ms linear;
+    -ms-transition:  800ms linear;
+    -o-transition:  800ms linear;
+}
+
+@keyframes runningLineMove {
+    0% {
+        margin-left: 10px;
+        opacity: 0;
+    }
+    5% {
+        margin-left: 10px;
+        opacity: 1;
+    }
+    90% {
+        margin-left: -2600px;
+        opacity: 1;
+    }
+    98% {
+        margin-left: -2600px;
+        opacity: 0;;
+    }
+    100% {
+        margin-left: -2600px;
+        opacity: 0;;
+    }
+}

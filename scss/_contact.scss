@@ -1,0 +1,36 @@
+.contact {
+    padding: 150px 0;
+    margin: 0 -5px;
+
+    text-align: center;
+
+    background-color: $bgColorThree;
+
+    &__title {
+        font-size: clamp(35px, 3.75vw, 54px);
+        line-height: 112%;
+        color: $textColorThree;
+
+        background-color: $bgColorThree;
+    }
+
+    &__link {
+        margin: 20px auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        background-color: $bgColorThree;
+    }
+
+    &__link > a {
+        font-size: 12px;
+        line-height: 213%;
+        letter-spacing: 0.05em;
+        color: $textColorFour;
+
+        background-color: $bgColorThree;
+    }
+}
