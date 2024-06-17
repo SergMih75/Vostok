@@ -222,6 +222,7 @@ h1 {
   }
 }
 .gallery {
+  display: none;
   margin-top: 50px;
   margin-bottom: 150px;
   padding: 0 1%;
@@ -233,6 +234,12 @@ h1 {
   width: 100%;
   margin-bottom: 25px;
   aspect-ratio: 1207/772;
+  scale: 0;
+  transition: 500ms linear;
+  -webkit-transition: 500ms linear;
+  -moz-transition: 500ms linear;
+  -ms-transition: 500ms linear;
+  -o-transition: 500ms linear;
 }
 .gallery__pic > img {
   width: 100%;
@@ -252,6 +259,7 @@ h1 {
 }
 
 .contact {
+  display: none;
   padding: 150px 0;
   margin: 0 -5px;
   text-align: center;

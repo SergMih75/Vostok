@@ -7,8 +7,10 @@ const animationOpacity = document.querySelectorAll('.animation__opacity')
 const animationPicOpacity = document.querySelector('.preview__img')
 // Анимация логотипов клиентов
 const clientLogoBlock = document.querySelector('.client__logo')
-
 const clientLogoItem = document.querySelectorAll('.client__logo-item')
+
+// Анимация картин галереи
+const galleryPic = document.querySelectorAll('.gallery__pic')
 
 // Скорость появления заголовка
 const titleSpeed = 1500
@@ -62,7 +64,6 @@ function opacityPicMove() {
 	}
 }
 
-
 function clientLogoMove() {	
 	if (((clientLogoBlock.offsetTop + clientLogoBlock.clientHeight - 10) - (document.documentElement.scrollTop + document.documentElement.clientHeight)) < 0) {
 		clientLogoItem.forEach(clientLogoItem=>{
@@ -70,6 +71,19 @@ function clientLogoMove() {
 			clientLogoItem.style.opacity = 0.5
 		})
 	}
+}
+
+function galleryPicMove() {
+	galleryPic.forEach(galleryPic =>{
+		if ((galleryPic.offsetTop + galleryPic.clientHeight / 2) - (document.documentElement.scrollTop + document.documentElement.clientHeight) < 0
+		) {
+			galleryPic.style.scale = 1
+		}
+
+		if ((galleryPic.offsetTop + galleryPic.clientHeight / 2) - (document.documentElement.scrollTop + document.documentElement.clientHeight) > 0) {
+			galleryPic.style.scale = 0
+		}
+	})
 }
 
 
@@ -91,9 +105,12 @@ document.addEventListener('DOMContentLoaded', () => {
 		document.querySelector('.preview').style.display = 'flex'
 		document.querySelector('.running-line').style.display = 'block'
 		document.querySelector('.client').style.display = 'block'
+		document.querySelector('.gallery').style.display = 'block'
+		document.querySelector('.contact').style.display = 'block'
 	}, titleSpeed + text.length * textPrintSpeed + 25)
 
 	document.addEventListener('scroll', opacityTextMove)
 	document.addEventListener('scroll', opacityPicMove)
 	document.addEventListener('scroll', clientLogoMove)
+	document.addEventListener('scroll', galleryPicMove)
 })
