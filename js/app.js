@@ -113,4 +113,16 @@ document.addEventListener('DOMContentLoaded', () => {
 	document.addEventListener('scroll', opacityPicMove)
 	document.addEventListener('scroll', clientLogoMove)
 	document.addEventListener('scroll', galleryPicMove)
+
+	// Плавная прокрутка к ссылкам галерея и контакты
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
 })

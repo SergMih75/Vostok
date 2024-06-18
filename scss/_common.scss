@@ -23,11 +23,31 @@ h1 {
 
 .main {
     max-width: 1440px;
-    width: calc(100vw - 17px);
+    width: calc(100vw - $scrollWidth);
     margin: 0 auto;
     padding: 40px 5px 0 5px;
     overflow: hidden;
 
+    background-color: $bgFirst;
+}
+
+// Скролл
+body::-webkit-scrollbar {
+    width: $scrollWidth;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: $bgColorThree;
+}
+
+body::-webkit-scrollbar-thumb {
+    border: 1px solid $bgColorThree;
+
+    border-radius: calc($scrollWidth / 2);
+    -webkit-border-radius: calc($scrollWidth / 2);
+    -moz-border-radius: calc($scrollWidth / 2);
+    -ms-border-radius: calc($scrollWidth / 2);
+    -o-border-radius: calc($scrollWidth / 2);
     background-color: $bgFirst;
 }
 

@@ -29,10 +29,28 @@ h1 {
 
 .main {
   max-width: 1440px;
-  width: calc(100vw - 17px);
+  width: calc(100vw - 8px);
   margin: 0 auto;
   padding: 40px 5px 0 5px;
   overflow: hidden;
+  background-color: #fff;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #141414;
+}
+
+body::-webkit-scrollbar-thumb {
+  border: 1px solid #141414;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
   background-color: #fff;
 }
 
