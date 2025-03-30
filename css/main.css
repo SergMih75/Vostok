@@ -19,7 +19,7 @@ body,
   font-weight: 400;
   color: #141414;
   text-decoration: none;
-  background-color: #fff;
+  background-color: rgba(234, 231, 231, 0.6745098039);
 }
 
 h1 {
@@ -33,7 +33,7 @@ h1 {
   margin: 0 auto;
   padding: 40px 5px 0 5px;
   overflow: hidden;
-  background-color: #fff;
+  background-color: rgba(234, 231, 231, 0.6745098039);
 }
 
 body::-webkit-scrollbar {
@@ -51,7 +51,7 @@ body::-webkit-scrollbar-thumb {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
-  background-color: #fff;
+  background-color: rgba(234, 231, 231, 0.6745098039);
 }
 
 @media (hover: hover) {
@@ -92,7 +92,7 @@ body::-webkit-scrollbar-thumb {
 
 .title {
   margin: 0 auto;
-  padding: 10% 0 10% 0;
+  padding: 2% 0 3% 0;
   overflow: hidden;
 }
 .title__title {
@@ -136,7 +136,7 @@ body::-webkit-scrollbar-thumb {
 
 .preview {
   margin: 0 auto;
-  padding: 10% 0 10% 0;
+  padding: 2% 0 3% 0;
   display: none;
   justify-content: space-between;
   overflow: hidden;
@@ -149,6 +149,7 @@ body::-webkit-scrollbar-thumb {
   background-repeat: no-repeat;
   background-size: contain;
   opacity: 0;
+  background-color: rgba(234, 231, 231, 0.6745098039);
   transition: 1800ms linear;
   -webkit-transition: 1800ms linear;
   -moz-transition: 1800ms linear;
@@ -191,7 +192,7 @@ body::-webkit-scrollbar-thumb {
 }
 .running-line {
   margin: 0 -5px;
-  padding: 300px 0;
+  padding: 30px 0;
   display: none;
   background-color: #141414;
 }
@@ -207,8 +208,8 @@ body::-webkit-scrollbar-thumb {
 
 .client {
   display: none;
-  margin-top: 260px;
-  padding-bottom: 100px;
+  margin-top: 26px;
+  padding-bottom: 30px;
   text-align: center;
   border-bottom: 1px solid #dddddd;
 }
@@ -242,7 +243,7 @@ body::-webkit-scrollbar-thumb {
 .gallery {
   display: none;
   margin-top: 50px;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
   padding: 0 1%;
 }
 .gallery__item {
@@ -250,7 +251,7 @@ body::-webkit-scrollbar-thumb {
 }
 .gallery__pic {
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   aspect-ratio: 1207/772;
   scale: 0;
   transition: 500ms linear;
@@ -278,7 +279,7 @@ body::-webkit-scrollbar-thumb {
 
 .contact {
   display: none;
-  padding: 150px 0;
+  padding: 50px 0 30px 0;
   margin: 0 -5px;
   text-align: center;
   background-color: #141414;
